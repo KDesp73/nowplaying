@@ -37,29 +37,33 @@ Open: `http://localhost:3000/api/now-playing?user=YOUR_LASTFM_USER`
 
 ## Query parameters
 
-| Parameter     | Description                                      | Default |
-|---------------|--------------------------------------------------|---------|
-| `user`        | Last.fm username (**required**)                  | —       |
-| `theme`       | `dark`, `light`, or `midnight`                   | `dark`  |
-| `width`       | Card width in px (280–800)                       | `420`   |
-| `show_album`  | Show album name (`true` / `false`)               | `true`  |
-| `bg`          | Background hex (without `#`)                     | theme   |
-| `border`      | Border hex                                       | theme   |
-| `text`        | Primary text hex                                 | theme   |
-| `muted`       | Secondary text hex                               | theme   |
-| `accent`      | Status / accent hex                              | theme   |
+| Parameter        | Description | Default |
+|------------------|-------------|---------|
+| `user`           | Last.fm username (**required**) | — |
+| `theme`          | `dark`, `light`, or `midnight` | `dark` |
+| `width`          | Card width in px (300–800) | `440` |
+| `show_album`     | Show album line (`true` / `false`) | `true` |
+| `cover`          | Art shape: `square`, `cd`, or `vinyl` | `cd` |
+| `spin`           | Rotation: `playing` (when live), `always`, `never` | `playing` |
+| `spin_speed`     | Seconds per rotation (3–30) | `5` (cd), `8` (vinyl) |
+| `bg`, `border`, `text`, `muted`, `accent` | Custom hex colors (no `#`) | theme |
+
+Alias: `cover_style` = `cover`, `spin_duration` = `spin_speed`. For `spin`, `true`/`false` map to `playing`/`never`.
 
 ### Examples
 
 ```html
+<!-- Spinning vinyl, always rotates -->
+<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&cover=vinyl&spin=always&spin_speed=10" />
+
+<!-- CD cover, static when not listening -->
+<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&cover=cd&spin=playing" />
+
+<!-- Classic square art, no disc -->
+<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&cover=square" />
+
 <!-- Light theme, wider card -->
-<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&theme=light&width=500" />
-
-<!-- Hide album line -->
-<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&show_album=false" />
-
-<!-- Custom colors -->
-<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&bg=0d1117&accent=58a6ff" />
+<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&theme=light&width=520" />
 ```
 
 ## How it works

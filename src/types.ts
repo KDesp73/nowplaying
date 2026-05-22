@@ -51,8 +51,17 @@ export interface CardTheme {
   coverBg: string;
 }
 
+export type CoverStyle = "square" | "cd" | "vinyl";
+
+/** When the disc cover rotates: always, only while now playing, or never. */
+export type SpinMode = "always" | "playing" | "never";
+
 export interface CardOptions {
   width: number;
   theme: CardTheme;
   showAlbum: boolean;
+  coverStyle: CoverStyle;
+  spinMode: SpinMode;
+  /** Seconds per full rotation (3–30). */
+  spinDuration: number;
 }
