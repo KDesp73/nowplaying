@@ -61,9 +61,9 @@ Alias: `cover_style` = `cover`, `spin_duration` = `spin_speed`. For `spin`, `tru
 
 ### Examples
 
-```html
+```md
 <!-- Spinning vinyl, always rotates -->
-<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&cover=vinyl&spin=always&spin_speed=10" />
+![](https://nowplaying-three.vercel.app/api/now-playing?user=you&cover=vinyl&spin=always&spin_speed=10)
 
 <!-- CD cover, static when not listening -->
 <img src="https://YOUR_DOMAIN/api/now-playing?user=rj&cover=cd&spin=playing" />
