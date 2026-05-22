@@ -1,4 +1,4 @@
-# lastfmwidget
+# nowplaying
 
 Dynamic **Last.fm** “now playing / last played” card as **SVG** for your [GitHub profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
 

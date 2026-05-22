@@ -1,5 +1,5 @@
 {
-  "name": "lastfmwidget",
+  "name": "nowplaying",
   "version": "1.0.0",
   "private": true,
   "description": "Dynamic Last.fm now-playing SVG widget for GitHub profile READMEs",
