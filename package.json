@@ -5,8 +5,7 @@
   "description": "Dynamic Last.fm now-playing SVG widget for GitHub profile READMEs",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "dev": "vercel dev",
-    "build": "tsc --noEmit"
+    "dev": "vercel dev"
   },
   "engines": {
     "node": ">=18"

@@ -8,6 +8,9 @@ Album art is embedded as **base64** inside the SVG so it renders correctly on Gi
 
 1. Create a [Last.fm API account](https://www.last.fm/api/account/create) and copy your **API key**.
 2. Deploy to [Vercel](https://vercel.com) (import this repo).
+   - Framework preset: **Other**
+   - Build command: leave empty (or use repo `vercel.json`)
+   - Output directory: **public** (set automatically via `vercel.json`)
 3. Add environment variable: `LASTFM_API_KEY` = your key.
 4. Embed in your profile README (replace domain and username):
 
