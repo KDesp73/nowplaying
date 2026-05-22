@@ -28,7 +28,7 @@ Album art is embedded as **base64** inside the SVG so it renders correctly on Gi
 <div align="center">
   <a href="https://www.last.fm/user/KDesp">
     <img
-      src="https://example.vercel.app/api/now-playing?user=KDesp"
+      src="https://nowplaying-three.vercel.app/api/now-playing?user=KDesp"
       alt="Last.fm now playing"
     />
   </a>
