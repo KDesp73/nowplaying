@@ -15,24 +15,10 @@ Album art is embedded as **base64** inside the SVG so it renders correctly on Gi
 4. Embed in your profile README (replace domain and username):
 
 ```markdown
-<div align="center">
-  <a href="https://www.last.fm/user/YOUR_LASTFM_USER">
-    <img
-      src="https://YOUR_VERCEL_DOMAIN/api/now-playing?user=YOUR_LASTFM_USER"
-      alt="Last.fm now playing"
-    />
-  </a>
-</div>
+![](https://nowplaying-three.vercel.app/api/now-playing?user=KDesp&spin=always&cover=cd)
 ```
 
-<div align="center">
-  <a href="https://www.last.fm/user/KDesp">
-    <img
-      src="https://nowplaying-three.vercel.app/api/now-playing?user=KDesp"
-      alt="Last.fm now playing"
-    />
-  </a>
-</div>
+![](https://nowplaying-three.vercel.app/api/now-playing?user=KDesp&spin=always&cover=cd)
 
 ## Local development
 
@@ -62,17 +48,17 @@ Alias: `cover_style` = `cover`, `spin_duration` = `spin_speed`. For `spin`, `tru
 ### Examples
 
 ```md
-<!-- Spinning vinyl, always rotates -->
+<!-- Spinning vinyl, always rotates --> 
 ![](https://nowplaying-three.vercel.app/api/now-playing?user=you&cover=vinyl&spin=always&spin_speed=10)
 
-<!-- CD cover, static when not listening -->
-<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&cover=cd&spin=playing" />
+<!-- CD cover, static when not listening --> 
+![](https://nowplaying-three.vercel.app/api/now-playing?user=you&cover=cd&spin=playing)
 
-<!-- Classic square art, no disc -->
-<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&cover=square" />
+<!-- Classic square art, no disc --> 
+![](https://nowplaying-three.vercel.app/api/now-playing?user=you&cover=square)
 
-<!-- Light theme, wider card -->
-<img src="https://YOUR_DOMAIN/api/now-playing?user=rj&theme=light&width=520" />
+<!-- Light theme, wider card --> 
+![](https://nowplaying-three.vercel.app/api/now-playing?user=you&theme=light&width=520)
 ```
 
 ## How it works
