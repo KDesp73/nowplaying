@@ -84,4 +84,4 @@ Alias: `cover_style` = `cover`, `spin_duration` = `spin_speed`. For `spin`, `tru
 
 ## License
 
-MIT
+[MIT](./LICENSE)
