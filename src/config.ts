@@ -3,5 +3,5 @@ export const LAYOUT = {
   cardHeight: 118,
   coverSize: 80,
   textGap: 18,
-  font: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
+  font: "system-ui, -apple-system, sans-serif",
 } as const;
